@@ -1,0 +1,1091 @@
+[
+    {
+        "id": "775e9173a8f75bce",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "730f7ebff2621e00",
+        "type": "ui_gauge",
+        "z": "775e9173a8f75bce",
+        "name": "temperature gauge",
+        "group": "054a3565e3649f19",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value}}°C",
+        "min": "26",
+        "max": "32",
+        "colors": [
+            "#e6e600",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e3d5f9e756461ca3",
+        "type": "ui_gauge",
+        "z": "775e9173a8f75bce",
+        "name": "light intensity gauge (left)",
+        "group": "64fec22f37c42c2b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1",
+        "colors": [
+            "#e6e600",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 730,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "94933729e91a3f4f",
+        "type": "ui_gauge",
+        "z": "775e9173a8f75bce",
+        "name": "light intensity gauge(right)",
+        "group": "d74bfcb3822f96d0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1",
+        "colors": [
+            "#e6e600",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9baf6484d8ac6cc7",
+        "type": "ui_gauge",
+        "z": "775e9173a8f75bce",
+        "name": "humidity gauge",
+        "group": "505c7b7f55a8a63e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value}}%",
+        "min": "60",
+        "max": "80",
+        "colors": [
+            "#e6e600",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "899bd9ceb4b42181",
+        "type": "ui_chart",
+        "z": "775e9173a8f75bce",
+        "name": "temperature chart",
+        "group": "054a3565e3649f19",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 710,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7e7f6cfe8a9cead",
+        "type": "ui_chart",
+        "z": "775e9173a8f75bce",
+        "name": "humidity chart",
+        "group": "505c7b7f55a8a63e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 700,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab300121080f7045",
+        "type": "ui_chart",
+        "z": "775e9173a8f75bce",
+        "name": "light intensity (left) chart",
+        "group": "64fec22f37c42c2b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 730,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "593a3d352e82fcbc",
+        "type": "ui_chart",
+        "z": "775e9173a8f75bce",
+        "name": "light intensity (right) chart",
+        "group": "d74bfcb3822f96d0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 730,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47b604832a8efcba",
+        "type": "mqtt in",
+        "z": "775e9173a8f75bce",
+        "name": "MQTT temperature data receiver",
+        "topic": "210494D/medibox/tempurature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e794870d45f595e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "730f7ebff2621e00",
+                "899bd9ceb4b42181"
+            ]
+        ]
+    },
+    {
+        "id": "8be79dd6fc99ebed",
+        "type": "mqtt in",
+        "z": "775e9173a8f75bce",
+        "name": "MQTT humility data receiver",
+        "topic": "210494D/medibox/humidity",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e794870d45f595e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "9baf6484d8ac6cc7",
+                "d7e7f6cfe8a9cead"
+            ]
+        ]
+    },
+    {
+        "id": "e6e89469af130820",
+        "type": "mqtt in",
+        "z": "775e9173a8f75bce",
+        "name": "MQTT light intensity(left) data receiver",
+        "topic": "210494D/medibox/light_intensity/left",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e794870d45f595e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "e3d5f9e756461ca3",
+                "ab300121080f7045"
+            ]
+        ]
+    },
+    {
+        "id": "bf96180d2df9fbca",
+        "type": "mqtt in",
+        "z": "775e9173a8f75bce",
+        "name": "MQTT light intensity(right) data receiver",
+        "topic": "210494D/medibox/light_intensity/right",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e794870d45f595e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 480,
+        "wires": [
+            [
+                "94933729e91a3f4f",
+                "593a3d352e82fcbc"
+            ]
+        ]
+    },
+    {
+        "id": "dd077394e2ac8f0c",
+        "type": "mqtt in",
+        "z": "775e9173a8f75bce",
+        "name": "MQTT maximum light intensity data receiver",
+        "topic": "210494D/medibox/light_intensity/max",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e794870d45f595e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 560,
+        "wires": [
+            [
+                "c502e36f21ae580b"
+            ]
+        ]
+    },
+    {
+        "id": "2a0ce48251cfdfa6",
+        "type": "mqtt in",
+        "z": "775e9173a8f75bce",
+        "name": "MQTT maximu light intensity source data receiver",
+        "topic": "210494D/medibox/light_intensity/max/source",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e794870d45f595e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "ce06b3514c92a978"
+            ]
+        ]
+    },
+    {
+        "id": "ce06b3514c92a978",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "msg pass",
+        "func": "// Extract the light source with maximum intensity from the MQTT payload.\nlet maxLightSource = msg.payload;\n\n// Create a formatted message for display (choose your preferred option).\nlet displayMessage = \"Light is strongest on the: \" + maxLightSource; \n\n// Pass the message to the next node in the flow.\nmsg.payload = displayMessage;\n\n// Return the modified message object to continue the flow.\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 620,
+        "wires": [
+            [
+                "72204cf7640d5684"
+            ]
+        ]
+    },
+    {
+        "id": "72204cf7640d5684",
+        "type": "ui_text",
+        "z": "775e9173a8f75bce",
+        "group": "4112b52f2fe3c48d",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "msg box for show max light side",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "c502e36f21ae580b",
+        "type": "ui_gauge",
+        "z": "775e9173a8f75bce",
+        "name": "gauge show max light intensity",
+        "group": "4112b52f2fe3c48d",
+        "order": 9,
+        "width": "14",
+        "height": "5",
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "83258bb666ea0695",
+        "type": "ui_text",
+        "z": "775e9173a8f75bce",
+        "group": "4112b52f2fe3c48d",
+        "order": 8,
+        "width": "14",
+        "height": "1",
+        "name": "show Maximum light intensity title",
+        "label": "Maximum light intensity",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 760,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d74f09ff48f2f20e",
+        "type": "ui_slider",
+        "z": "775e9173a8f75bce",
+        "name": "Minimum Angle",
+        "label": "Minimum Angle",
+        "tooltip": "",
+        "group": "4112b52f2fe3c48d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "payload",
+        "topicType": "msg",
+        "min": 0,
+        "max": "120",
+        "step": 1,
+        "className": "",
+        "x": 720,
+        "y": 1000,
+        "wires": [
+            [
+                "b87f775b4150577b",
+                "77d6f124eac1989e"
+            ]
+        ]
+    },
+    {
+        "id": "82b33796d22b1141",
+        "type": "ui_slider",
+        "z": "775e9173a8f75bce",
+        "name": "Controlling Factor",
+        "label": "Controlling Factor",
+        "tooltip": "",
+        "group": "4112b52f2fe3c48d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "payload",
+        "topicType": "msg",
+        "min": 0,
+        "max": "1",
+        "step": "0.01",
+        "className": "",
+        "x": 730,
+        "y": 900,
+        "wires": [
+            [
+                "0d9dbd0880da087b",
+                "b017121365f7bd31"
+            ]
+        ]
+    },
+    {
+        "id": "c1515708e37bbd72",
+        "type": "ui_dropdown",
+        "z": "775e9173a8f75bce",
+        "name": "Medication Preset",
+        "label": "Medication Preset",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "4112b52f2fe3c48d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": " Tablet A",
+                "value": "tablet_a",
+                "type": "str"
+            },
+            {
+                "label": "Tablet B",
+                "value": "tablet_b",
+                "type": "str"
+            },
+            {
+                "label": "Tablet C",
+                "value": "tablet_c",
+                "type": "str"
+            },
+            {
+                "label": "Custom",
+                "value": "custom",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "payload",
+        "topicType": "msg",
+        "className": "",
+        "x": 730,
+        "y": 800,
+        "wires": [
+            [
+                "9e542bc93de89e9e",
+                "e2780fbeb25381dd"
+            ]
+        ]
+    },
+    {
+        "id": "77d6f124eac1989e",
+        "type": "mqtt out",
+        "z": "775e9173a8f75bce",
+        "name": "Minimum angle sender",
+        "topic": "210494D/nodeRed/angle/min",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e794870d45f595e7",
+        "x": 1160,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "b017121365f7bd31",
+        "type": "mqtt out",
+        "z": "775e9173a8f75bce",
+        "name": "Controlling factor sender",
+        "topic": "210494D/nodeRed/controlling_factor",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e794870d45f595e7",
+        "x": 1170,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "9e542bc93de89e9e",
+        "type": "mqtt out",
+        "z": "775e9173a8f75bce",
+        "name": "Medication Preset sender",
+        "topic": "210494D/nodeRed/medication_preset",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e794870d45f595e7",
+        "x": 1170,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "bcb70ee063d98dc3",
+        "type": "trigger",
+        "z": "775e9173a8f75bce",
+        "name": "Default Starting Parameters Trigger",
+        "op1": "{\"minAngle\":30,\"controlFactor\":0.75,\"medicineType\":\"tablet_a\"}",
+        "op2": "0",
+        "op1type": "json",
+        "op2type": "str",
+        "duration": "0",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "92d40a73b9f1540e",
+                "30693b40eb908b11",
+                "1a84b295ea75b8b7"
+            ]
+        ],
+        "info": "Sends degault values and triggers starting of sending angles to the medibox.\r\nThis trigger activates when the light data is ready."
+    },
+    {
+        "id": "1a84b295ea75b8b7",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "filter MedicinePreset()",
+        "func": "return {payload: msg.payload[\"medicineType\"]};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 800,
+        "wires": [
+            [
+                "c1515708e37bbd72"
+            ]
+        ]
+    },
+    {
+        "id": "30693b40eb908b11",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "filter ControlFactor()",
+        "func": "return {payload:msg.payload[\"controlFactor\"]};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 920,
+        "wires": [
+            [
+                "82b33796d22b1141"
+            ]
+        ]
+    },
+    {
+        "id": "92d40a73b9f1540e",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "filter MinAngle()",
+        "func": "return { payload: msg.payload[\"minAngle\"] };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1020,
+        "wires": [
+            [
+                "d74f09ff48f2f20e"
+            ]
+        ]
+    },
+    {
+        "id": "a67b285a24d31cb6",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "Update Sliders()",
+        "func": "// Default medication preset\nlet defMedData = \n{\n    \"tablet_a\": { \"controlFactor\": 0.6, \"minAngle\": 45 },\n    \"tablet_b\": { \"controlFactor\": 0.8, \"minAngle\": 60 },\n    \"tablet_c\": { \"controlFactor\": 0.5, \"minAngle\": 35 }\n};\n\n// Get the medicine type from the incoming message.\nlet medicineType = msg.payload;\nflow.set(\"medicineType\", medicineType);\nlet minAngle;\nlet controlFactor;\n\nif (medicineType ===\"tablet_a\"){\n    minAngle = defMedData[\"tablet_a\"][\"minAngle\"];\n    controlFactor =  defMedData[\"tablet_a\"][\"controlFactor\"];\n}\nelse if (medicineType ===\"tablet_b\"){\n    minAngle =  defMedData[\"tablet_b\"][\"minAngle\"];\n    controlFactor = defMedData[\"tablet_b\"][\"controlFactor\"];\n}\nelse if (medicineType ===\"tablet_c\"){\n    minAngle =  defMedData[\"tablet_c\"][\"minAngle\"];\n    controlFactor = defMedData[\"tablet_c\"][\"controlFactor\"];\n}\n\nreturn {payload:{\"minAngle\": minAngle, \"controlFactor\": controlFactor}};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 920,
+        "wires": [
+            [
+                "30693b40eb908b11",
+                "92d40a73b9f1540e"
+            ]
+        ]
+    },
+    {
+        "id": "0d9dbd0880da087b",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "create control factor variable",
+        "func": "flow.set(\"controlFactor\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 1020,
+        "wires": [
+            [
+                "8f59aefc6204c7f8"
+            ]
+        ]
+    },
+    {
+        "id": "b87f775b4150577b",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "create minAngle variable",
+        "func": "flow.set(\"minAngle\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 1120,
+        "wires": [
+            [
+                "8f59aefc6204c7f8"
+            ]
+        ]
+    },
+    {
+        "id": "8f59aefc6204c7f8",
+        "type": "function",
+        "z": "775e9173a8f75bce",
+        "name": "resetDropdowmToCustom()",
+        "func": "// Default medication preset\nlet defMedData = \n{\n    \"tablet_a\": { \"controlFactor\": 0.6, \"minAngle\": 45 },\n    \"tablet_b\": { \"controlFactor\": 0.8, \"minAngle\": 60 },\n    \"tablet_c\": { \"controlFactor\": 0.5, \"minAngle\": 35 }\n};\n\n// Retrieve current minAngle and controlFactor from flow context\nlet currentMA = flow.get(\"minAngle\");\nlet currentCF = flow.get(\"controlFactor\");\n\n// Check for exact match with each preset\nif (currentCF === defMedData[\"tablet_a\"][\"controlFactor\"] && currentMA === defMedData[\"tablet_a\"][\"minAngle\"]) {\n    return { payload: \"tablet_a\" }; // Signal preset A is active\n} else if (currentCF === defMedData[\"tablet_b\"][\"controlFactor\"] && currentMA === defMedData[\"tablet_b\"][\"minAngle\"]) {\n    return { payload: \"tablet_b\" }; // Signal preset B is active\n} else if (currentCF === defMedData[\"tablet_c\"][\"controlFactor\"] && currentMA === defMedData[\"tablet_c\"][\"minAngle\"]) {\n    return { payload: \"tablet_c\" }; // Signal preset C is active\n} else {\n    return { payload: \"custom\" }; // Signal a custom configuration\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 1040,
+        "wires": [
+            [
+                "af3f6bbddbeec073"
+            ]
+        ]
+    },
+    {
+        "id": "e2780fbeb25381dd",
+        "type": "rbe",
+        "z": "775e9173a8f75bce",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 930,
+        "y": 800,
+        "wires": [
+            [
+                "a67b285a24d31cb6"
+            ]
+        ]
+    },
+    {
+        "id": "af3f6bbddbeec073",
+        "type": "rbe",
+        "z": "775e9173a8f75bce",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 730,
+        "y": 1080,
+        "wires": [
+            [
+                "c1515708e37bbd72"
+            ]
+        ]
+    },
+    {
+        "id": "5963f2822dbf7ded",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "4112b52f2fe3c48d",
+        "order": 1,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "5a6a2e8c795c42b3",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "4112b52f2fe3c48d",
+        "order": 7,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "875b858ca30bab0a",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "4112b52f2fe3c48d",
+        "order": 5,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "f2669d039f52d007",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "4112b52f2fe3c48d",
+        "order": 11,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "5b2e4f16a83fc795",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "4112b52f2fe3c48d",
+        "order": 3,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "28cd3de8f4ea8d8a",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "505c7b7f55a8a63e",
+        "order": 2,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "4d66c9aa35b9cf76",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "505c7b7f55a8a63e",
+        "order": 4,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "d836a03851ac3151",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "4112b52f2fe3c48d",
+        "order": 12,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "d0273c8dd999079b",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "64fec22f37c42c2b",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "57ed32672af2fe9d",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "d74bfcb3822f96d0",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "63ec326bff571308",
+        "type": "ui_spacer",
+        "z": "775e9173a8f75bce",
+        "name": "spacer",
+        "group": "054a3565e3649f19",
+        "order": 2,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "054a3565e3649f19",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "5285bdb0b95877f9",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "64fec22f37c42c2b",
+        "type": "ui_group",
+        "name": "Left Light intensity",
+        "tab": "5285bdb0b95877f9",
+        "order": 4,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d74bfcb3822f96d0",
+        "type": "ui_group",
+        "name": "Right Light intensity",
+        "tab": "5285bdb0b95877f9",
+        "order": 5,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "505c7b7f55a8a63e",
+        "type": "ui_group",
+        "name": "Humidity Level",
+        "tab": "5285bdb0b95877f9",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e794870d45f595e7",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Server",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4112b52f2fe3c48d",
+        "type": "ui_group",
+        "name": "Parameter Control",
+        "tab": "5285bdb0b95877f9",
+        "order": 3,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5285bdb0b95877f9",
+        "type": "ui_tab",
+        "name": "Smart Medi Box",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]
