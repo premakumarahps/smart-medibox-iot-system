@@ -212,6 +212,26 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
           <div>
             © Semester 4 University Academic Project • Smart Medibox IoT System
           </div>
+          <div className="flex items-center gap-4 text-xs">
+            <a
+              href="https://github.com/premakumarahps/smart-medibox-iot-system"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+            >
+              <span>GitHub Repository</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://premakumarahps.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+            >
+              <span>Main Portfolio</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
           <div className="flex items-center gap-2">
             <span>Designed & Programmed by</span>
             <strong className="text-slate-300">Sadun Premakumara (210494D)</strong>
