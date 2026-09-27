@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { OverviewSection } from './components/OverviewSection';
@@ -20,6 +21,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#030712] text-slate-100 flex flex-col selection:bg-cyan-500/30 selection:text-cyan-200">
+      <Analytics />
       
       {/* Top Auto-hiding Navigation Bar */}
       <Navbar activeTab={activeTab} setActiveTab={handleSetActiveTab} />
