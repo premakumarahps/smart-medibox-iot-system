@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { OverviewSection } from './components/OverviewSection';
@@ -80,6 +81,8 @@ export const App: React.FC = () => {
       {/* Footer Attribution & Artifact Download Hub */}
       <Footer setActiveTab={handleSetActiveTab} />
 
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 };
